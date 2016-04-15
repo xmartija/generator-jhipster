@@ -67,7 +67,7 @@ RUN \
 
 # expose the working directory, the Tomcat port, the BrowserSync ports
 USER jhipster
-WORKDIR "/home/jhipster/app"
-VOLUME ["/home/jhipster/app"]
+WORKDIR "/home/jhipster/data"
+# VOLUME ["/home/jhipster/app"] code will be checked out into data
 EXPOSE 8080 3000 3001
 CMD ["tail", "-f", "/home/jhipster/generator-jhipster/generators/server/templates/src/main/resources/banner-no-color.txt"]
